@@ -11,50 +11,49 @@ body {
   
 
   #heart-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-  }
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
+overflow: hidden;
+opacity: 0;
+transition: opacity 2s ease-out;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-  #motivacional {
-    position: fixed;
-    pointer-events: none;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-  }
+#motivacional {
+position: absolute;
+text-align: center;
+font-size: 5em;
+color: black;
+opacity: 0;
+transition: opacity 2s ease-out;
+}
 
-  #motivacional2 {
-    position: fixed;
-    text-align: center;
-    transform: translate(-25%, 70%);
-    font-size: 5em; /* Tamanho aumentado para 20em */
-    color: black;
-  }
+#motivacional2 {
+font-size: 1em;
+}
 
-  #heart {
-    position: fixed;
-    top: 3%;
-    left: 25%;
-    font-size: 35em; /* Tamanho aumentado para 20em */
-    color: red;
-    animation: heartBeat 1s infinite;
-  }
+#heart {
+position: absolute;
+font-size: 35em;
+color: red;
+animation: heartBeat 1s infinite;
+}
 
-  @keyframes heartBeat {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-  }
+@keyframes heartBeat {
+0%, 100% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.2);
+}
+}
+
 
   #buttons-container {
     margin-top: -300%;
