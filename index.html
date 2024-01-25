@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Botão Começar</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fogos.css">
 </head>
 
 <body>
   <div class="center">
-    <div id="buttons-container">
-      <button class="button" id="yes-button" onclick="alert('Olha o universo ai trabalhando! 😍')" type="button">Sim</button>
-      <button class="button" id="no-button" onclick="alert('Resposta errada, tente novamente 😘')"
-        type="button">Não</button>
+    <div id="buttons-container" class="hidden">
+      <button class="button hidden" id="yes-button" onclick="alert('Olha o universo ai trabalhando! 😍'); fogos()" type="button">Sim</button>
+      <button class="button hidden" id="no-button" onclick="alert('Resposta errada, tente novamente 😘')" type="button">Não</button>
     </div>
     <button onclick="iniciar()" type="button" id="comeco">Começar</button>
 
@@ -25,6 +25,9 @@
       </div>
     </div>
   </div>
+  <div id="fogos1" class="firework hidden"></div>
+  <div id="fogos2" class="firework hidden"></div>
+  <div id="fogos3" class="firework hidden"></div>
   <script src="js/javasctipt.js"></script>
 </body>
 
